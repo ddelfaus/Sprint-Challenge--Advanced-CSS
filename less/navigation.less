@@ -1,1 +1,33 @@
 // Navigation code here
+
+.nav-container{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+     background:  @wild-sand;
+
+    @media @phone {
+        padding-top: 5%;
+    }
+    h1 {
+        font-size: 3.5rem;
+       
+    }
+    
+    nav{
+        .centerrowflexer();
+        margin-top: 1%;
+        @media @phone {
+            margin-top: 3% ;
+        }
+        a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @ebony-clay;
+            margin-left: 12%;
+            white-space: nowrap;
+        }
+    }// nav close
+}// nav-container close
