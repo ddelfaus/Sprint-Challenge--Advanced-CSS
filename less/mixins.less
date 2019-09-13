@@ -1,1 +1,28 @@
 // Mixins Here
+
+
+.borderitem(){
+    border: 2px dashed @waterloo;
+    border-top:none;
+    border-bottom: none;
+}
+.centerrowflexer(){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.custom-btn(@button-bg, @button-width, @button-font-color){
+    display: block;
+    background-color: @button-bg;
+    margin: 0 1% 2%;
+    cursor: pointer;
+    width: @button-width;
+    height: 30px;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    color:@button-font-color;
+    text-align: center;
+    padding: 2% 0;
+}
